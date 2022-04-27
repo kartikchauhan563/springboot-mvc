@@ -9,16 +9,29 @@
 
 
     <div class="container">
-        <h1>Employee Management System</h1>
+        <h1>Online Resume System</h1>
         <hr>
         <h2>Save Employee</h2>
         <form th:action="@{/saveEmployee}" th:object="${employee}" method="POST">
         <input type="hidden" th:field="*{id}"/>
-            <input type="text" name="" th:field="*{firstName}" placeholder="Employee FirstName" class="form-control" id="">
-            <input type="text" name="" th:field="*{lastName}" placeholder="Employee LastName" class="form-control" id="">
-            <input type="email" name="" th:field="*{email}" placeholder="Employee email" class="form-control" id="">
+       <!--     <input type="text" name="" th:field="*{firstName}" placeholder="Enter Job Title" class="form-control" id="">
+            <input type="text" name="" th:field="*{lastName}" placeholder="Enter Job Description" class="form-control" id="">
+            <input type="email" name="" th:field="*{email}" placeholder="Enter Job Employer" class="form-control" id="">
+ --> 
+  <input type="text" name="" th:field="*{JobName}" placeholder="Enter Job Name" class="form-control" id="">
+   <input type="text" name="" th:field="*{Employer}" placeholder="Enter Employer" class="form-control" id="">
+    <input type="text" name="" th:field="*{Address}" placeholder="Enter Address" class="form-control" id="">
+     <input type="text" name="" th:field="*{ContactNumber}" placeholder="Enter Contact Number" class="form-control" id="">
+      <input type="text" name="" th:field="*{ContactEmailId}" placeholder="Enter Contact EmailId" class="form-control" id="">
+       <input type="text" name="" th:field="*{Experience}" placeholder="Enter Experience" class="form-control" id="">
+        <input type="text" name="" th:field="*{SkillsRequired}" placeholder="Enter Skills Required" class="form-control" id="">
+        <input type="text" name="" th:field="*{Qualification}" placeholder="Enter Qualification" class="form-control" id="">
+        <input type="text" name="" th:field="*{Location}" placeholder="Enter Location" class="form-control" id="">
+        <input type="text" name="" th:field="*{Salary}" placeholder="Enter Salary" class="form-control" id="">
+        <input type="text" name="" th:field="*{NoOfVacancies}" placeholder="Enter No of Vacancies" class="form-control" id="">
 
-            <button type="submit" class="btn btn-info col-2" >save employee</button>
+
+            <button type="submit" class="btn btn-info col-2" >save JOB</button>
 
         </form>
     </div>

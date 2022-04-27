@@ -42,6 +42,14 @@ public class EmployeeServiceImpl implements EmployeeService{
 		this.repository.deleteById(id);
 		
 	}
+
+	
+	public List<Employee> getByJobName(String keyword) {
+		return repository.findByJobName(keyword);
+	}
+
+	
+	
 	
 
 }
